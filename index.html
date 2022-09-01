@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeus-weather-app</title>
+    <!-- <link rel="stylesheet" href="css/font_awesome/css/fontawesome.min.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/e07e8074fe.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <img class="logo" src="assets/zeus_weather_app_logo.png">
+    <section>
+        <div class="wrapper">
+            <div class="main">
+                <div class="top">
+                    <span id="day" class="day">Tuesday</span>
+                    <span id="date" class="date">30th June, 2022</span>
+                    <span id="country" class="country">London</span>
+                </div>
+                <div class="bottom">
+                    <span id="icon" class="icon"><i class="fa fa-sun-o fa-2x"></i></span>
+                    <span id="temp" class="temp">29<sup>0</sup>C</span>
+                    <span id="desc">Sunny</span>
+                </div>
+            </div>
+
+            <!-- left side -->
+            <div class="info">
+                <div class="up">
+                    <div class="minions"><span class="key">Visibility</span> <span class="value-Visibility">0%</span>
+                    </div>
+                    <div class="minions"><span class="key">Humidity</span> <span class="value-humidity">34%</span>
+                    </div>
+                    <div class="minions"><span class="key">Wind Speed</span> <span class="value-wind">10km/hr</span>
+                    </div>
+                </div>
+                <div class="middle">
+                    <div class="others">
+                        <span class="icon2"><i class="fa fa-sun-o"></i></span>
+                    </div>
+                    <div class="others">
+                        <span class="day">Wed</span>
+                    </div>
+                    <div class="others">
+                        <span class="temp">10<sup>0</sup>C</span>
+                    </div>
+                </div>
+                
+                <div class="before-down">
+                    <span id="country-small" class="country">London</span>
+                    <span id="date-small" class="date">30th June, 2022</span>
+                </div>
+
+                <div class="down">
+                    <form class="searchBox">
+                        <input type="text" id="search" placeholder="Enter a city or country name">
+                    </form>
+
+                    <button class="change"> <i class="fa fa-location-dot"></i> Change location</button>
+                    <span class="msg"></span>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/gsap.min.js"></script>
+    <script src="scripts/scripts.js" defer></script>
+</body>
+
+</html>
