@@ -206,6 +206,7 @@ span {
 #date-small {
     color: rgb(36, 18, 138);
     font-size: x-large;
+    font-weight: bold;
 }
 
 .msg {
@@ -311,7 +312,6 @@ input::placeholder {
         #country-small,
         #date-small {
             font-size: medium;
-            font-weight: bold;
         }
 
         .error-msg {

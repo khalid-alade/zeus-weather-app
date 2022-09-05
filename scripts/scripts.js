@@ -6,7 +6,6 @@ $(document).ready(function () {
     const humidity = document.querySelector('.value-humidity');
     const windSpeed = document.querySelector('.value-wind');
     const loadCirc = document.querySelector('.load-box');
-    // $(loadCirc).hide()
 
     const icon = document.querySelectorAll('.icon');
     const icon2 = document.querySelectorAll('.icon2');
@@ -64,8 +63,7 @@ $(document).ready(function () {
             })
     }
 
-
-    $(changeLocation).click(function () {
+    function checkButtonAction() {
         if (changeLocation.innerHTML == 'Search') {
             close()
         }
@@ -86,12 +84,15 @@ $(document).ready(function () {
             $(loadCirc).show()
             fetch_search()
         }
-    })
+    }
+
+
+    $(changeLocation).click(checkButtonAction)
     form.addEventListener("submit", e => {
         e.preventDefault();
-        fetch_search()
-
+        checkButtonAction();
     })
+
     function fetch_search() {
         var inputVal = input.value;
         fetch_results(inputVal)
