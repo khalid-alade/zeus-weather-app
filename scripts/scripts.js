@@ -1,18 +1,19 @@
 $(document).ready(function () {
     window.onload = fetch_results('london')
 
-    const country = document.querySelector('.country');
+    const country = document.querySelectorAll('.country');
     const Visibility = document.querySelector('.value-Visibility');
     const humidity = document.querySelector('.value-humidity');
     const windSpeed = document.querySelector('.value-wind');
-
+    const loadCirc = document.querySelector('.load-box');
+    // $(loadCirc).hide()
 
     const icon = document.querySelectorAll('.icon');
     const icon2 = document.querySelectorAll('.icon2');
     const day = document.querySelectorAll('.day');
     const temperature = document.querySelectorAll('.temp');
     const desc = document.querySelector('#desc');
-    const date = document.querySelector('#date');
+    const date = document.querySelectorAll('.date');
 
     const changeLocation = document.querySelector('.change');
     const form = document.querySelector("form");
@@ -37,8 +38,6 @@ $(document).ready(function () {
         fetch(url)
             .then(response => response.json())
             .then(data => {
-
-
                 const { main, name, sys, weather, wind, visibility } = data;
 
 
@@ -57,8 +56,10 @@ $(document).ready(function () {
 
 
                 $(msg).html('')
+                $(loadCirc).hide()
             })
             .catch((error) => {
+                $(loadCirc).hide()
                 $(msg).html('<span class="error-msg">Please search for a valid city<span/>')
             })
     }
@@ -77,10 +78,12 @@ $(document).ready(function () {
 
         function open() {
             changeLocation.innerHTML = 'Search'
+            $(msg).html('')
         }
         function close() {
             changeLocation.innerHTML = '<i class="fa fa-location-dot"></i> Change location'
             tl.reverse()
+            $(loadCirc).show()
             fetch_search()
         }
     })
@@ -94,6 +97,5 @@ $(document).ready(function () {
         fetch_results(inputVal)
     }
 })
-
 
 
