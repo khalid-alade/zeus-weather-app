@@ -9,7 +9,8 @@ body {
     position: relative;
     background-color: black;
 }
-.load-box{
+
+.load-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,7 +20,8 @@ body {
     top: 0;
     z-index: 10000;
 }
-.load-circ{
+
+.load-circ {
     width: 65px;
     height: 65px;
     border: 4px dashed white;
@@ -29,11 +31,13 @@ body {
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
+
 @keyframes load-screen {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 }
@@ -274,11 +278,46 @@ input::placeholder {
     width: 500px;
 }
 
-@media only screen and (max-width: 897px) {
+@media only screen and (max-width: 980px) {
     @media only screen and (orientation: landscape) {
-        .msg{
+
+        .msg {
             bottom: -10%;
         }
+
+        .info {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .up {
+            height: 37%;
+        }
+
+        .middle {
+            width: 59%;
+            height: 28%;
+        }
+
+        .before-down {
+            width: 39%;
+            height: 28%;
+            transform: unset;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-end;
+        }
+
+        #country-small,
+        #date-small {
+            font-size: medium;
+            font-weight: bold;
+        }
+
+        .error-msg {
+            font-size: small;
+        }
+
     }
 }
 
@@ -360,43 +399,6 @@ input::placeholder {
     }
 }
 
-@media only screen and (max-width: 769px) {
-    @media only screen and (orientation: landscape) {
-        .info {
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-
-        .up {
-            height: 37%;
-        }
-
-        .middle {
-            width: 59%;
-            height: 28%;
-        }
-
-        .before-down {
-            width: 39%;
-            height: 28%;
-            transform: unset;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: flex-end;
-        }
-
-        #country-small,
-        #date-small {
-            font-size: medium;
-            font-weight: bold;
-        }
-
-        .error-msg {
-            font-size: small;
-        }
-
-    }
-}
 
 @media only screen and (max-width: 496px) {
 
