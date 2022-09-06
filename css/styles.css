@@ -153,7 +153,8 @@ span {
     padding: 10px 0;
     border-bottom: 1.5px solid black;
 }
-.minions:first-of-type{
+
+.minions:first-of-type {
     border-top: 1.5px solid black;
 }
 
@@ -393,7 +394,6 @@ input::placeholder {
         width: 100%;
         background: linear-gradient(-30deg, rgb(99, 99, 230), cyan);
         padding: 18px;
-        /* border-radius: 6px; */
     }
 
     .change:hover {
@@ -406,20 +406,13 @@ input::placeholder {
 }
 
 @media only screen and (max-width: 768px) {
-    .wrapper{
-    width: 100%;
-    height: 100%;
-}
-.minions{
-    border-bottom: 1.5px solid black;
-}
-.minions:first-of-type{
-    border-top: 1.5px solid black;
-}
+    .wrapper {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media only screen and (max-width: 496px) {
-
 
     #country-small,
     #date-small {
@@ -436,17 +429,4 @@ input::placeholder {
     .info {
         padding: 15px;
     }
-
-    /* .wrapper {
-        width: 92%;
-        height: 97%;
-    } */
-
-}
-
-@media only screen and (max-width: 342px) {
-    /* .wrapper {
-        width: 93%;
-        height: 97%;
-    } */
 }
