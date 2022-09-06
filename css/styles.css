@@ -209,11 +209,15 @@ span {
     display: none;
 }
 
-#country-small,
 #date-small {
     color: rgb(36, 18, 138);
     font-size: x-large;
     font-weight: bold;
+}
+
+#country-small {
+    color: black;
+    font-size: x-large;
 }
 
 .msg {
