@@ -11,7 +11,7 @@ $(document).ready(function () {
     const icon2 = document.querySelectorAll('.icon2');
     const day = document.querySelectorAll('.day');
     const temperature = document.querySelectorAll('.temp');
-    const desc = document.querySelector('#desc');
+    const desc = document.querySelectorAll('.desc-desc');
     const date = document.querySelectorAll('.date');
 
     const changeLocation = document.querySelector('.change');
