@@ -80,6 +80,7 @@ $(document).ready(function () {
         }
         function close() {
             changeLocation.innerHTML = '<i class="fa fa-location-dot"></i> Change location'
+            input.blur()
             tl.reverse()
             $(loadCirc).show()
             fetch_search()
