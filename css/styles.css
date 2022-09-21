@@ -149,7 +149,7 @@ span {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: black;
+    color: rgb(213, 226, 238);
     padding: 10px 0;
     border-bottom: 1.5px solid black;
 }
